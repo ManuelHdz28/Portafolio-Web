@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+    <div
+      class="badge-base LI-profile-badge"
+      data-locale="es_ES"
+      data-size="medium"
+      data-theme="dark"
+      data-type="VERTICAL"
+      data-vanity="manuel-hernandez28"
+      data-version="v1"
+    >
+      <a
+        class="badge-base__link LI-simple-link"
+        href="https://sv.linkedin.com/in/manuel-hernandez28?trk=profile-badge"
+        >Manuel Alberto Hernandez Melendez</a
+      >
+    </div>
+    <div class="notification">
+      <p>Bienvenido 😀</p>
+      <span class="notification_progress"></span>
+    </div>
+
+    <style>
+      .notification {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        width: max-content;
+        padding: 20px 15px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        background-color: #141619;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(30px);
+      
+        opacity: 0;
+        visibility: hidden;
+        animation: fade-in 4s linear forwards;
+        -webkit-animation: fade-in 4s linear forwards;
+      }
+
+      .notification_progress {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        width: calc(100% - 10px);
+        height: 3px;
+        transform: scalex(0);
+        transform-origin: left;
+        background-image: linear-gradient(to right, #539bdb, #3250bf);
+
+        animation: load 3s 0.25s linear forwards;
+        -webkit-animation: load 3s 0.25s linear forwards;
+      }
+    </style>
+  </body>
+</html>

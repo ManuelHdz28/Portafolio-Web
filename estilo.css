@@ -13,6 +13,47 @@ a{
     color: #fff;
     text-decoration: none;
 }
+.notification{
+    position: absolute;
+    bottom: 50px;
+    left:50px;
+    width: max-content;
+    padding: 20px 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: #141619;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    transform:translateY(30px);
+    -webkit-transform:translateY(30px);
+    -moz-transform:translateY(30px);
+    -ms-transform:translateY(30px);
+    -o-transform:translateY(30px);
+    opacity:0;
+    visibility: hidden;
+    animation: fade-in 4s linear forwards ;
+    -webkit-animation: fade-in 4s linear forwards ;
+}
+
+.notification_progress{
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+    width: calc(100% - 10px);
+    height: 3px;
+    transform:scalex(0);
+    transform-origin:left;
+    background-image: linear-gradient(        to right, #539bdb, #3250bf);
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    animation: load 3s 0.25s linear forwards ;
+    -webkit-animation: load 3s 0.25s linear forwards ;
+}
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -279,7 +320,7 @@ a{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 35%;}
 }
 
 .skills .skill .htmlcss{
@@ -297,7 +338,7 @@ a{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 65%;}
 }
 
 .skills .skill .wordpress{
@@ -306,7 +347,7 @@ a{
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 71%;}
 }
 
 .skills .skill .drupal{
@@ -719,3 +760,5 @@ footer .arriba{
         width: 100%;
     }
 }
+
+
